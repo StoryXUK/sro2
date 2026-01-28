@@ -130,7 +130,7 @@
   background-color: var(--color2);
 }
 .bg-color3 {
-  background-color: var(--color3);
+  background-color: var(--white);
 }
 .bg-color4 {
   background-color: var(--color4);
@@ -183,7 +183,7 @@
   color: var(--color2);
 }
 .text-color3 {
-  color: var(--color3);
+  color: var(--white);
 }
 .text-color4 {
   color: var(--color4);
@@ -282,7 +282,7 @@ body {
   font-family: var(--Lato);
   position: relative;
   width: 100%;
-  color: var(--color3);
+  color: var(--white);
   max-width: 100%;
 }
 h1,
@@ -293,6 +293,7 @@ h5,
 h6 {
   font-family: var(--Bricolage-Grotesque);
   font-weight: 700;
+  color: var(--white);
 }
 p,
 ul li,
@@ -301,7 +302,7 @@ ol li {
   line-height: 2.25rem;
 }
 a {
-  color: inherit;
+  color: var(--white);
 }
 a,
 a:hover,
@@ -2433,28 +2434,28 @@ nav > ul {
   max-width: calc(100% - 1.25rem);
 }
 input::-webkit-input-placeholder {
-  color: var(--color3);
+  color: var(--white);
 }
 textarea::-webkit-input-placeholder {
-  color: var(--color3);
+  color: var(--white);
 }
 input::-moz-placeholder {
-  color: var(--color3);
+  color: var(--white);
 }
 textarea::-moz-placeholder {
-  color: var(--color3);
+  color: var(--white);
 }
 input:-ms-input-placeholder {
-  color: var(--color3);
+  color: var(--white);
 }
 textarea:-ms-input-placeholder {
-  color: var(--color3);
+  color: var(--white);
 }
 input:-moz-placeholder {
-  color: var(--color3);
+  color: var(--white);
 }
 textarea:-moz-placeholder {
-  color: var(--color3);
+  color: var(--white);
 }
 
 /*===== Light Mode Style =====*/
@@ -3556,7 +3557,7 @@ nav ul li.active > a:before {
   width: 100%;
   font-size: 1.125rem;
   display: block;
-  color: var(--color3);
+  color: var(--white);
 }
 .field-box:not(.attachment-field) textarea {
   height: 7.1875rem;
@@ -3907,3 +3908,6 @@ nav ul li.active > a:before {
 .blog-detail-cont p + .tags-box-wrap {
   margin-top: 3.75rem;
 }
+
+
+.bigbold {}
