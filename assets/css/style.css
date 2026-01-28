@@ -3914,7 +3914,7 @@ nav ul li.active > a:before {
 
 
 .bigbold {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 800;
 }
 
@@ -3976,4 +3976,15 @@ nav ul li.active > a:before {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* Home section - full height spacer on desktop, hidden on mobile */
+#home {
+  display: none;
+}
+@media (min-width: 992px) {
+  #home {
+    display: block;
+    height: 100vh;
+  }
 }
