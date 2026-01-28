@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="theme-color" content="#28ec8d">
+    <link rel="icon" href="assets/images/favicon.png" sizes="32x32" type="image/png">
+    <title>Serena Rosaria</title>
+
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body class="bg-color12 bg-blend-luminosity dark-layer2 opc9 bg-att-fixed scheme1 dark">
+    <main>
+        <div class="bg-anime position-fixed">
+            <canvas class="bg-anime-canvas" id="bg-anime"></canvas>
+            <script type="x-shader/x-vertex" id="wrapVertexShader">
+            					#define PI 3.1415926535897932384626433832795
+            					attribute float size;
+            					void main() {
+            						vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+            						gl_PointSize = 3.0;
+            						gl_Position = projectionMatrix * mvPosition;
+            					}
+            				</script>
+            <script type="x-shader/x-fragment" id="wrapFragmentShader">
+            					uniform sampler2D texture;
+            					void main(){
+            						vec4 textureColor = texture2D( texture, gl_PointCoord );
+            						if ( textureColor.a < 0.3 ) discard;
+            						vec4 dotColor = vec4(255, 255, 255, 0.05);
+            						vec4 color = dotColor * textureColor;
+            						gl_FragColor = color;
+            					}
+            				</script>
+        </div>
+        <div class="page-loader">
+            <div class="loader">
+                <div class='loader-style-1 panelLoad'>
+                    <div class='cube-face cube-face-front'>S</div>
+                    <div class='cube-face cube-face-back'>E</div>
+                    <div class='cube-face cube-face-left'>R</div>
+                    <div class='cube-face cube-face-right'>E</div>
+                    <div class='cube-face cube-face-bottom'>N</div>
+                    <div class='cube-face cube-face-top'>A</div>
+                </div>
+                <span class="cube-face">Serena Rosaria</span>
+            </div>
+        </div><!-- Page Loader -->
+
+
+        <section>
+            <div class="w-100 pt-60 pb-130 pl-100 position-relative">
+                <div class="container">
+                    <div class="resume-wrapper d-flex justify-content-between position-relative w-100">
+                        <div class="resume-sidebar d-flex flex-column position-sticky">
+                            <h1 class="bigbold">SERENA ROSARIA </h1>
+
+
+
+                            <nav class="sidebar-nav">
+                                <ul>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#background">Background</a></li>
+                                    <li><a href="#convergance">Convergance</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+
+                            
+                        </div><!-- Resume Sidebar -->
+                        <div class="resume-content d-flex flex-column">
+                            <div class="theiaStickySidebar">
+                                <section class="mt-95">
+                                    <div class="scroll-down-text text-center">
+                                        <a href="#about" class="scroll-arrow"><i class="fas fa-chevron-down"></i></a>
+                                    </div>
+
+                                </section>
+
+
+
+                                <section id="about">
+                                    <div class="position-relative pt-140 w-100">
+                                        <div class="row">
+
+                                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                                <div class="about-cap d-flex flex-column position-relative w-100">
+                                                    <h2>About</h2>
+                                                    <p class="mb-0">Working across industries withapplied insight and
+                                                        experience gained from a full-stack portfolio career that connects
+                                                        the dots from clay to code across art, information,and
+                                                        technology.</p>
+                                                    <p class="mb-0">Leading projects that implementeffective strategies
+                                                        in online business and professional practice to deliver long-term
+                                                        impact, fostergrowth, and sustain creative futures.</p>
+                                                </div><!-- About Cap -->
+                                                <img class="img-fluid w-100 pt-60" src="assets/images/serena.jpg"
+                                                    alt="About Image" loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section id="background">
+                                    <div class="position-relative pt-140 w-100">
+                                        <div class="row">
+
+                                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                                <div class="about-cap d-flex flex-column position-relative w-100">
+                                                    <h2>Background</h2>
+                                                    <h3>Master of Science in Entrepreneurship</h3>
+                                                    <p>Falmouth University, Cornwall. UK<br>Art and Advanced
+                                                        Technologies</p>
+                                                    <hr>
+                                                    <h3>Bachelor of Arts in Design</h3>
+                                                    <p>London Metropolitan University, London. UK<br>Science
+                                                        Communication in the Arts</p>
+
+                                                    <hr>
+
+                                                    <h3>ILM Certified in Coaching</h3>
+                                                    <p>Use of evidence-based tools and techniques to unlock potential
+                                                        and drive change</p>
+                                                </div><!-- About Cap -->
+                                                <img class="img-fluid w-100 pt-60" src="assets/images/outlook.jpg"
+                                                    alt="About Image" loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section id="convergance">
+                                    <div class="position-relative pt-140 w-100">
+                                        <div class="row">
+
+                                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                                <div class="about-cap d-flex flex-column position-relative w-100">
+                                                    <h2>Convergance</h2>
+
+                                                    <p>Moving art beyond physical boundaries,bridging material
+                                                    craft and 3D digital space to explore new forms of interaction,
+                                                    display, and creative possibility.
+                                                </p>
+
+                                                </div><!-- About Cap -->
+                                            </div>
+                                        </div>
+
+                                        <video class="w-100" autoplay loop muted playsinline
+                                            >
+                                            <source src="assets/videos/sro.MP4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </section>
+
+                                <section id="contact">
+                                    <div class="position-relative pt-140 w-100">
+                                        <div class="row">
+
+                                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                                <div class="about-cap d-flex flex-column position-relative w-100">
+                                                    <h2>Connect</h2>
+
+                                                    <p>For workshop enquiries, projects, collaborations, or anything that feels aligned.
+                                                </p>
+                                                <a href="mailto:serena@serenarosaria.com">serena@serenarosaria.com</a>
+                                                <div
+                                class="mt-10 d-flex align-items-center justify-content-between position-relative w-100">
+
+                                <a href="https://www.instagram.com/" title="Instagram" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+
+                            </div><!-- User Social Wrap -->
+
+                                                </div><!-- About Cap -->
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </section>
+
+
+                            </div>
+                        </div><!-- Resume Content -->
+                    </div><!-- Resume Wrapper -->
+                </div>
+            </div>
+        </section>
+    </main><!-- Main Wrapper -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/ResizeSensor.min.js"></script>
+    <script src="assets/js/theia-sticky-sidebar.min.js"></script>
+    <script src="assets/js/three.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/anime-int.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
