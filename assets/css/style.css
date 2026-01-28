@@ -3937,6 +3937,7 @@ nav ul li.active > a:before {
   align-items: center;
 }
 .sidebar-nav li a {
+  text-decoration: none !important;
   display: inline-block;
   position: relative;
   color: #888;
@@ -3967,4 +3968,38 @@ nav ul li.active > a:before {
 }
 .sidebar-nav li a.active::after {
   width: 100%;
+}
+
+.sidebar-nav ul li a:before {
+  display: none !important;
+  opacity: 0 !important;
+  content: none !important;
+}
+
+/* Scroll down text */
+.scroll-down-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.scroll-down-text span {
+  color: var(--white);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+}
+
+/* Home section - full height spacer on desktop, hidden on mobile */
+#home {
+  display: none;
+}
+@media (min-width: 992px) {
+  #home {
+    display: block;
+    height: 100vh;
+    position: relative;
+  }
 }
