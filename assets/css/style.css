@@ -59,7 +59,7 @@
 
 /*===== General Variables =====*/
 :root {
-  --scheme1: #28ec8d;
+  --scheme1: #ffffff;
   --scheme2: #6344c6;
   --scheme3: #ff7300;
   --scheme4: #a0ce4e;
@@ -2921,6 +2921,7 @@ nav ul li.active > a:before {
 
 /*===== Resume Content Style =====*/
 .resume-content {
+  margin-right: 50px;
   flex: 0 0 calc(100% - 34.0625rem);
   max-width: calc(100% - 34.0625rem);
 }
