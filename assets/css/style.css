@@ -644,6 +644,10 @@ footer {
   margin-bottom: 8.75rem;
 }
 
+.mt-95 {
+  margin-top: 95vh;
+}
+
 /*=== Container ===*/
 .container,
 .container-fluid {
