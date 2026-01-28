@@ -3910,9 +3910,10 @@ nav ul li.active > a:before {
 
 
 .bigbold {
-  font-size: xx-large;
+  font-size: 100px;
   font-weight: 800;
 }
+
 /* Sidebar Navigation */
 .sidebar-nav {
   margin-top: 2rem;
@@ -3921,6 +3922,7 @@ nav ul li.active > a:before {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  padding-left: 0;
 }
 .sidebar-nav li {
   display: flex;
@@ -3933,7 +3935,7 @@ nav ul li.active > a:before {
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 .sidebar-nav li a::before {
   content: "";
@@ -3942,19 +3944,20 @@ nav ul li.active > a:before {
   height: 1px;
   background-color: #888;
   margin-right: 1rem;
-  transition: all 0.3s ease;
+  transition: width 0.3s ease, background-color 0.3s ease, margin-right 0.3s ease;
 }
 .sidebar-nav li a:hover {
   color: var(--white);
 }
 .sidebar-nav li a:hover::before {
-  width: 3rem;
+  width: 4rem;
+  margin-right: 1rem;
   background-color: var(--white);
 }
 .sidebar-nav li a.active {
   color: var(--white);
 }
 .sidebar-nav li a.active::before {
-  width: 3rem;
+  width: 4rem;
   background-color: var(--white);
 }
