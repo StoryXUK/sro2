@@ -4007,3 +4007,22 @@ nav ul li.active > a:before {
     position: relative;
   }
 }
+
+/* Scroll arrow animation */
+.scroll-arrow {
+  display: inline-block;
+  animation: bounce 2s infinite ease-in-out;
+}
+.scroll-arrow i {
+  font-size: 1.5rem;
+  color: var(--white);
+  opacity: 0.4;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
