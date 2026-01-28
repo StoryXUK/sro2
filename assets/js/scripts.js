@@ -209,7 +209,7 @@
     $("main").css("padding-top", menu_height);
 
     //===== Page Loader =====//
-    $(".page-loader").fadeOut("slow");
+    setTimeout(function() { $(".page-loader").fadeOut("slow"); }, 2000);
   }); //===== Window onLoad Ends =====//
 
   //===== Sticky Header =====//
