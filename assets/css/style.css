@@ -2921,7 +2921,7 @@ nav ul li.active > a:before {
 
 /*===== Resume Content Style =====*/
 .resume-content {
-  margin-right: 50px;
+  margin-right: 100px;
   flex: 0 0 calc(100% - 34.0625rem);
   max-width: calc(100% - 34.0625rem);
 }
@@ -3919,6 +3919,7 @@ nav ul li.active > a:before {
   font-weight: 800;
 }
 
+
 /* Sidebar Navigation */
 .sidebar-nav {
   margin-top: 2rem;
@@ -3936,58 +3937,34 @@ nav ul li.active > a:before {
   align-items: center;
 }
 .sidebar-nav li a {
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  position: relative;
   color: #888;
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
-.sidebar-nav li a::before {
+.sidebar-nav li a::after {
   content: "";
-  display: inline-block;
-  width: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
   height: 1px;
-  background-color: #888;
-  margin-right: 1rem;
-  transition: width 0.3s ease, background-color 0.3s ease, margin-right 0.3s ease;
+  background-color: var(--white);
+  transition: width 0.3s ease;
 }
 .sidebar-nav li a:hover {
   color: var(--white);
 }
-.sidebar-nav li a:hover::before {
-  width: 4rem;
-  margin-right: 1rem;
-  background-color: var(--white);
+.sidebar-nav li a:hover::after {
+  width: 100%;
 }
 .sidebar-nav li a.active {
   color: var(--white);
 }
-.sidebar-nav li a.active::before {
-  width: 4rem;
-  background-color: var(--white);
-}
-
-/* About section - hidden below viewport on desktop/laptop */
-@media (min-width: 992px) {
-  #about {
-    margin-top: 100vh;
-  }
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Home section - full height spacer on desktop, hidden on mobile */
-#home {
-  display: none;
-}
-@media (min-width: 992px) {
-  #home {
-    display: block;
-    height: 100vh;
-  }
+.sidebar-nav li a.active::after {
+  width: 100%;
 }
